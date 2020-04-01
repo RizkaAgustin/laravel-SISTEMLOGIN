@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Feb 2020 pada 19.38
+-- Waktu pembuatan: 26 Mar 2020 pada 09.11
 -- Versi server: 10.4.6-MariaDB
 -- Versi PHP: 7.3.8
 
@@ -126,20 +126,20 @@ CREATE TABLE `tb_deskripsi_web` (
   `id_eselon1` int(11) NOT NULL,
   `nama_url` varchar(255) NOT NULL,
   `nama_eselon` varchar(255) NOT NULL,
-  `ip_address` varchar(255) NOT NULL,
+  `ip_address` varchar(255) DEFAULT NULL,
   `deskripsi` text NOT NULL,
-  `status` varchar(255) NOT NULL,
-  `image` mediumtext NOT NULL,
-  `update_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `status` int(11) DEFAULT NULL,
+  `tampilan` mediumtext DEFAULT NULL,
+  `update_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `mytimestampcol` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `tb_deskripsi_web`
 --
 
-INSERT INTO `tb_deskripsi_web` (`id`, `id_kategori_web`, `id_eselon1`, `nama_url`, `nama_eselon`, `ip_address`, `deskripsi`, `status`, `image`, `update_at`) VALUES
-(1, 1, 1, 'http://ppid.menlhk.go.id/', 'Sekretarial Jenderal', '123436578', 'Sesuai dengan amanat pasal 13 UU No.14 Tahun 2008, Kementerian Lingkungan Hidup dan Kehutanan sebagai salah satu Badan Publik telah membentuk Pejabat Pengelola Informasi dan Dokumentasi (PPID) melalui Keputusan Menteri Lingkungan Hidup dan Kehutanan Republik Indonesia Nomor : SK. 185/MENLHK/SETJEN/HMS.3/4/2017 tentang Pejabat Pengelola Informasi dan Dokumentasi (PPID) Lingkup Kementerian Lingkungan Hidup dan Kehutanan . Dengan terbentuknya Pejabat Pengelola Informasi dan Dokumentasi (PPID) pemohon informasi sesuai dengan haknya dapat memperoleh informasi publik yang dihasilkan oleh Kementerian Lingkungan Hidup dan Kehutanan sesuai dengan ketentuan dalam UU No. 14 Tahun 2008.\r\n\r\nUntuk mengatur pelaksanaan pelayanan informasi melalui PPID di lingkungan Kementerian Lingkungan Hidup dan Kehutanan, maka disusun Peraturan Menteri Lingkungan Hidup dan Kehutanan P.18 Tahun 2018 tentang Pelayanan Informasi Publik di lingkungan Kementerian Lingkungan Hidup dan Kehutanan.\r\n\r\n\r\nVisi\r\nMewujudkan hak setiap orang untuk berkomunikasi dan memperoleh informasi \r\n\r\nMisi\r\nMenjamin pelayanan informasi dalam waktu yang cepat, dengan cara yang sederhana, dan dengan biaya yang murah.\r\nInovasi teknologi untuk mendukung implementasi keterbukaan informasi publik.\r\nMendorong partisipasi masyarakat dan meningkatkan akuntabilitas dlm proses pengambilan kebijakan publik.', 'Aktif', '', '2020-02-27 02:30:39'),
-(2, 2, 2, 'http://itjen.menlhk.go.id', 'Sekretarial Jenderal', '546698976412', '\r\n\r\nDalam pelaksanaan tugas dan fungsi tersebut, Inspektorat Jenderal dibantu oleh unit organisasi Eselon II yang meliputi Sekretariat Inspektorat Jenderal, Inspektorat Wilayah I, Inspektorat Wilayah II, Inspektorat Wilayah III, Inspektorat Wilayah IV dan Inspektorat Investigasi. Adapun tugas dan fungsi unit organisasi Eselon II lingkup Inspektorat Jenderal Kementerian Lingkungan Hidup dan Kehutanan adalah sebagai berikut :\r\n\r\nInspektorat Wilayah I mempunyai tugas melaksanakan pengawasan intern terhadap kinerja, keuangan dan administrasi melalui audit, reviu, evaluasi, pemantauan, dan kegiatan pengawasan lainnya, pengawasan untuk tujuan tertentu termasuk pendanaan dekonsentrasi, tugas pembantuan dan dana alokasi khusus pada unit-unit kerja ', 'Aktif', '', '2020-02-27 02:30:39');
+INSERT INTO `tb_deskripsi_web` (`id`, `id_kategori_web`, `id_eselon1`, `nama_url`, `nama_eselon`, `ip_address`, `deskripsi`, `status`, `tampilan`, `update_at`, `mytimestampcol`) VALUES
+(19, 1, 1, 'www.menlhk.go.id', 'Sekretariat Jenderal', NULL, 'Website Resmi Menlhk', 1, 'Screenshot (10).png', '2020-03-17 07:51:19', '2020-03-17 07:51:19');
 
 -- --------------------------------------------------------
 
@@ -311,7 +311,7 @@ ALTER TABLE `tb_deskripsi_si`
 -- AUTO_INCREMENT untuk tabel `tb_deskripsi_web`
 --
 ALTER TABLE `tb_deskripsi_web`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_eselon1`

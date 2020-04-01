@@ -240,20 +240,20 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="{{url('deskripsi')}}"><i class="fa fa-circle-o"></i>Sekretariat Jenderal</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>Inspektorat Jenderal</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>Planologi Kehutanan Dan<p style="text-indent: 1.6em;">Lingkungan</p>
+                                <li><a href="{{url('kategorisetjen')}}"><i class="fa fa-circle-o"></i>Sekretariat Jenderal</a></li>
+                                <li><a href="{{url('kategoriitjen')}}"><i class="fa fa-circle-o"></i>Inspektorat Jenderal</a></li>
+                                <li><a href="{{url('kategoripktl')}}"><i class="fa fa-circle-o"></i>Planologi Kehutanan Dan<p style="text-indent: 1.6em;">Lingkungan</p>
                                     </a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>Konservasi Sumber Daya<p style="text-indent: 1.6em;"> Alam Dan Ekosistem</p></a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>Pengendalian DAS Dan<p style="text-indent: 1.6em;">Hutan Lindung</p></a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>Pengelolaan Hutan Dan <p style="text-indent: 1.6em;">Produksi Lestari</p></a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>Pengendalian Pencemaran <p style="text-indent: 1.6em;">Dan Kerusakan Lingkungan</p></a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>Pengelolaan Sampah, <p style="text-indent: 1.6em;">Limbah Dan B3</p></a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>Pengendalian Perubahan <p style="text-indent: 1.6em;">Iklim</p></a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>Perhutanan Sosial Dan<p style="text-indent: 1.6em;"> Kemitraan Lingkungan</p></a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>Penegakan Hukum <p style="text-indent: 1.6em;">Lingkungan Hidup Dan Kehutanan</p></a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>BP2SDM</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i>Badan Litbang Dan <p style="text-indent: 1.6em;">Inovasi</p></a></li>
+                                <li><a href="{{url('kategoriksdae')}}"><i class="fa fa-circle-o"></i>Konservasi Sumber Daya<p style="text-indent: 1.6em;"> Alam Dan Ekosistem</p></a></li>
+                                <li><a href="{{url('kategoripdashl')}}"><i class="fa fa-circle-o"></i>Pengendalian DAS Dan<p style="text-indent: 1.6em;">Hutan Lindung</p></a></li>
+                                <li><a href="{{url('kategoriphpl')}}"><i class="fa fa-circle-o"></i>Pengelolaan Hutan Dan <p style="text-indent: 1.6em;">Produksi Lestari</p></a></li>
+                                <li><a href="{{url('kategorippkl')}}"><i class="fa fa-circle-o"></i>Pengendalian Pencemaran <p style="text-indent: 1.6em;">Dan Kerusakan Lingkungan</p></a></li>
+                                <li><a href="{{url('kategoripslb3')}}"><i class="fa fa-circle-o"></i>Pengelolaan Sampah, <p style="text-indent: 1.6em;">Limbah Dan B3</p></a></li>
+                                <li><a href="{{url('kategoriditjenppi')}}"><i class="fa fa-circle-o"></i>Pengendalian Perubahan <p style="text-indent: 1.6em;">Iklim</p></a></li>
+                                <li><a href="{{url('kategoripskl')}}"><i class="fa fa-circle-o"></i>Perhutanan Sosial Dan<p style="text-indent: 1.6em;"> Kemitraan Lingkungan</p></a></li>
+                                <li><a href="{{url('kategorigakkum')}}"><i class="fa fa-circle-o"></i>Penegakan Hukum <p style="text-indent: 1.6em;">Lingkungan Hidup Dan Kehutanan</p></a></li>
+                                <li><a href="{{url('kategoribp2sdm')}}"><i class="fa fa-circle-o"></i>BP2SDM</a></li>
+                                <li><a href="{{url('kategorilitbang')}}"><i class="fa fa-circle-o"></i>Badan Litbang Dan <p style="text-indent: 1.6em;">Inovasi</p></a></li>
 
                             </ul>
                         </li>
@@ -413,7 +413,7 @@
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="{{url('/dashboard')}}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li class="active">Sekretarial Jenderal</li>
+                        <li class="active">Data</li>
                         <!--<li><a href="#">Sekretariat Jenderal</a></li>-->
 
                     </ol>
@@ -478,12 +478,12 @@
 
                                 <thead>
 
-                                    <a href="{{url('/tambahdeskripsi')}}" class="btn btn-success"><i class="fa fa-plus"></i> Tambah Data
+                                    <a href="{{url('/tambahdeskripsisi'.'/'.$id_eselon)}}" class="btn btn-success"><i class="fa fa-plus"></i> Tambah Data
                                     </a><br><br>
                                     <tr>
                                         <th>No</th>
                                         <th>Nama URL</th>
-                                        <th>Eselon1</th>
+                                        <th>Nama Eselon 1</th>
                                         <th>Deskripsi</th>
                                         <th>Status</th>
                                         <th>Tampilan</th>
@@ -492,24 +492,38 @@
                                 </thead>
                                 <tbody>
                                     @php
-                                    $no = 1;
+                                    $no1 = 1;
                                     @endphp
-                                    @foreach($data_deskripsiweb as $data)
+                                    @foreach($data_deskripsisi as $data)
                                     <tr>
-                                        <td>{{$no++}}</td>
-                                        <td>{{$data->nama_url}}</td>
+                                        <td>{{$no1++}}</td>
+                                        <td><a href="{{$data->nama_url}}" target="_blank">{{$data->nama_url}}</a></td>
                                         <td>{{$data->nama_eselon}}</td>
                                         <td>{{$data->deskripsi}}</td>
-                                        <td>{{$data->status}}</td>
-                                        <td><img src="{{ asset('assets/'.$data->tampilan) }}" width="180" height="120"></td>
+                                        <?php $array_status = array('Tidak Aktif', 'Aktif');
+                                        $no = 0;
+                                        while ($no < count($array_status)) {
+                                            if ($no == $data->status) {
+                                                $nama_status = $array_status[$no];
+                                            }
+                                            $no++;
+                                        }
+                                        ?>
+                                        <td>{{$nama_status}}</td>
+                                        <td><a href="{{ asset('assets/'.$data->tampilan) }}" target="_blank"><img src="{{ asset('assets/'.$data->tampilan) }}" width="180" height="120"></td>
 
                                         <th>
                                             <li class="btn-left">
-                                                <a href="" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-pencil"></i> Ubah
-                                                </a> </li><br><br>
+                                                <a href="{{url('/editdeskripsisi'.'/'.$data->id)}}" class="btn btn-primary" onclick="return confirm('ingin ubah?');"><i class="fa fa-pencil"></i> Ubah</a>
+                                            </li><br><br>
                                             <li class="btn-left">
-                                                <a href="" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Hapus
-                                                </a></li>
+                                                <!-- <form action="{{ $data->id_eselon1}}" method="POST" class="d-inline"> -->
+
+                                                <a href="{{url('/deletedeskripsisi'.'/'.$data->id. '/' . $data->id_eselon1)}}" class="btn btn-danger" onclick="return confirm('yakin?');"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <!-- </form> -->
+                                            </li>
+
                                         </th>
 
                         </div>

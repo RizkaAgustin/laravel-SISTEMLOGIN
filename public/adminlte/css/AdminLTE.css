@@ -3267,7 +3267,8 @@ table.text-center th {
 }
 .login-page,
 .register-page {
-  background-image:url(/adminlte/img/download2.png);
+  /* background-image:url(/adminlte/img/download2.png); */
+  background-color: #3c8dbc;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

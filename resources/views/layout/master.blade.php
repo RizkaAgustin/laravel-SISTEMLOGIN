@@ -145,20 +145,20 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="{{url('deskripsi')}}"><i class="fa fa-circle-o"></i>Sekretariat Jenderal</a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>Inspektorat Jenderal</a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>Planologi Kehutanan Dan<p style="text-indent: 1.6em;">Lingkungan</p>
+              <li><a href="{{url('kategorisetjen')}}"><i class="fa fa-circle-o"></i>Sekretariat Jenderal</a></li>
+              <li><a href="{{url('kategoriitjen')}}"><i class="fa fa-circle-o"></i>Inspektorat Jenderal</a></li>
+              <li><a href="{{url('kategoripktl')}}"><i class="fa fa-circle-o"></i>Planologi Kehutanan Dan<p style="text-indent: 1.6em;">Lingkungan</p>
                 </a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>Konservasi Sumber Daya<p style="text-indent: 1.6em;"> Alam Dan Ekosistem</p></a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>Pengendalian DAS Dan<p style="text-indent: 1.6em;">Hutan Lindung</p></a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>Pengelolaan Hutan Dan <p style="text-indent: 1.6em;">Produksi Lestari</p></a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>Pengendalian Pencemaran <p style="text-indent: 1.6em;">Dan Kerusakan Lingkungan</p></a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>Pengelolaan Sampah, <p style="text-indent: 1.6em;">Limbah Dan B3</p></a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>Pengendalian Perubahan <p style="text-indent: 1.6em;">Iklim</p></a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>Perhutanan Sosial Dan<p style="text-indent: 1.6em;"> Kemitraan Lingkungan</p></a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>Penegakan Hukum <p style="text-indent: 1.6em;">Lingkungan Hidup Dan Kehutanan</p></a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>BP2SDM</a></li>
-              <li><a href="#"><i class="fa fa-circle-o"></i>Badan Litbang Dan <p style="text-indent: 1.6em;">Inovasi</p></a></li>
+              <li><a href="{{url('kategoriksdae')}}"><i class="fa fa-circle-o"></i>Konservasi Sumber Daya<p style="text-indent: 1.6em;"> Alam Dan Ekosistem</p></a></li>
+              <li><a href="{{url('kategoripdashl')}}"><i class="fa fa-circle-o"></i>Pengendalian DAS Dan<p style="text-indent: 1.6em;">Hutan Lindung</p></a></li>
+              <li><a href="{{url('kategoriphpl')}}"><i class="fa fa-circle-o"></i>Pengelolaan Hutan Dan <p style="text-indent: 1.6em;">Produksi Lestari</p></a></li>
+              <li><a href="{{url('kategorippkl')}}"><i class="fa fa-circle-o"></i>Pengendalian Pencemaran <p style="text-indent: 1.6em;">Dan Kerusakan Lingkungan</p></a></li>
+              <li><a href="{{url('kategoripslb3')}}"><i class="fa fa-circle-o"></i>Pengelolaan Sampah, <p style="text-indent: 1.6em;">Limbah Dan B3</p></a></li>
+              <li><a href="{{url('kategoriditjenppi')}}"><i class="fa fa-circle-o"></i>Pengendalian Perubahan <p style="text-indent: 1.6em;">Iklim</p></a></li>
+              <li><a href="{{url('kategoripskl')}}"><i class="fa fa-circle-o"></i>Perhutanan Sosial Dan<p style="text-indent: 1.6em;"> Kemitraan Lingkungan</p></a></li>
+              <li><a href="{{url('kategorigakkum')}}"><i class="fa fa-circle-o"></i>Penegakan Hukum <p style="text-indent: 1.6em;">Lingkungan Hidup Dan Kehutanan</p></a></li>
+              <li><a href="{{url('kategoribp2sdm')}}"><i class="fa fa-circle-o"></i>BP2SDM</a></li>
+              <li><a href="{{url('kategorilitbang')}}"><i class="fa fa-circle-o"></i>Badan Litbang Dan <p style="text-indent: 1.6em;">Inovasi</p></a></li>
 
             </ul>
           </li>

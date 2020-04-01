@@ -19,7 +19,7 @@
         <form action="{{ url('/registerPost') }}" method="post">
             {{ csrf_field() }}
             <div class="form-group">
-                <label for="alamat">Name:</label>
+                <label for="alamat">Nama:</label>
                 <input type="text" class="form-control" id="name" name="name">
             </div>
             <div class="form-group">
@@ -41,8 +41,8 @@
     </div>
     <div class="form-group">
         <span style="margin: 15px">
-            <button type="submit" class="btn btn-md btn-primary">Submit</button>
-            <a href="{{url('login')}}" type="reset" class="btn btn-md btn-danger">Cancel</a>
+            <button type="submit" class="btn btn-md btn-primary">Simpan</button>
+            <a href="{{url('login')}}" type="reset" class="btn btn-md btn-danger">Batal</a>
         </span>
     </div>
     </form>
