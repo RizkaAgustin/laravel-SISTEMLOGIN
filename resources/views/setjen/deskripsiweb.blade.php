@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Monitoring | SETJEN Page</title>
+        <title>Monitoring | Menlhk</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.7 -->
@@ -119,7 +119,7 @@
                                         inner menu: contains the actual data
                                         <ul class="menu">
                                             <li>
-                                                 Task item 
+                                                 Task item
                                                 <a href="#">
                                                     <h3>
                                                         Design some buttons
@@ -132,7 +132,7 @@
                                                     </div>
                                                 </a>
                                             </li>
-                                            end task item 
+                                            end task item
                                         </ul>
                                     </li>
                                     <li class="footer">
@@ -156,7 +156,7 @@
                                             <small>Member since Nov. 2012</small>
                                         </p>
                                     </li>
-                                    <!-- Menu Body 
+                                    <!-- Menu Body
                                     <li class="user-body">
                                         <div class="row">
                                             <div class="col-xs-4 text-center">
@@ -169,7 +169,7 @@
                                                 <a href="#">Friends</a>
                                             </div>
                                         </div>
-                                        /.row 
+                                        /.row
                                     </li>-->
                                     <!-- Menu Footer-->
                                     <li class="user-footer">

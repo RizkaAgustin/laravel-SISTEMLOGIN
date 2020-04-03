@@ -54,7 +54,7 @@ class TambahDeskripsiController extends Controller
             DB::table('tb_deskripsi_web')->where('id', $id_deskripsi_web->id)->update(['tampilan' => $name_tampilan]);
         }
 
-        return redirect('/deskripsiweb' . '/' . $req->id_eselon1);
+        return redirect('/deskripsiweb' . '/' . $req->id_eselon1)->with('sukses', 'Data berhasil diinput');
     }
     public function destroy($data, $data_eselon)
     {

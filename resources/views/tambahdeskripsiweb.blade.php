@@ -315,7 +315,7 @@
                     </ol>
                 </section>
 
-                <!-- Main content 
+                <!-- Main content
         <section class="content">-->
                 <!-- Main Section -->
                 <section class="main-section">
@@ -369,7 +369,7 @@
                     <div class="form-group">
                         <span style="margin: 25px">
                             <input type="submit" class="btn btn-md btn-primary" value="tambah">
-                            <a href="{{url('/deskripsiweb/1')}}" type="reset" class="btn btn-md btn-danger">Batal</a>
+                            <a href="{{url('/deskripsiweb/1')}}" type="reset" class="btn btn-md btn-danger" onclick="return confirm('ingin melewatkan perubahan?');">Batal</a>
                         </span>
                     </div>
                     </form>
